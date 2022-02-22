@@ -1,7 +1,11 @@
 <h1>{{title | uppercase}}</h1>
 <nav>
-  <a routerLink="/dashboard">Dashboard</a>
-  <a routerLink="/heroes">Heroes</a>
+  <!-- <a routerLink="/dashboard">Dashboard</a>
+  <a routerLink="/heroes">Heroes</a> -->
+  <span class="p-buttonset">
+    <button pButton class="p-button-lg" icon="pi pi-check" label="Dashboard" type="button" routerLink="/dashboard"></button>
+    <button pButton class="p-button-lg" icon="pi pi-check" label="Heroes" type="button" routerLink="/heroes"></button>
+  </span>
 </nav>
 
 <router-outlet></router-outlet>

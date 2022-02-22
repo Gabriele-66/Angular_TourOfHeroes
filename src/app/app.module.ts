@@ -14,6 +14,10 @@ import { MessagesComponent } from './messages/messages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
 
+//NGPRIME-------------------------
+import {ButtonModule} from 'primeng/button';
+//-------------------------------
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +35,9 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
     // and returns simulated server responses.
     // Remove it when a real server is ready to receive requests.
-    HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, { dataEncapsulation: false })
+    HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, { dataEncapsulation: false }),
+    //PRIMENG------------------------------------
+    ButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
